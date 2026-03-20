@@ -17,7 +17,7 @@ The notebook audits LLM responses across five categories of causal reasoning, co
 
 This project sits at the intersection of two things I care about:
 
-1. **Causal inference in economics.** In ECON 398 (Introduction to Causal Methods) at UBC, I applied difference-in-differences methodology to estimate the causal effect of immigration policy reform on regional wages. That coursework made clear how difficult — and important — it is to distinguish causation from correlation. LLMs are trained on text that routinely conflates the two.
+1. **Causal inference in economics.** In ECON 398 (Introduction to Causal Methods) at UBC, I applied difference-in-differences methodology to estimate the causal effect of immigration policy reform on regional wages. That coursework made clear how difficult and important it is to distinguish causation from correlation. LLMs are trained on text that routinely conflates the two.
 
 2. **Critical AI literacy.** Tools like ChatGPT are being adopted rapidly in academic settings, often without a clear understanding of their limitations. This project is designed to make those limitations visible and teachable, particularly for students in the social sciences and humanities who rely on causal reasoning in their discipline.
 
@@ -105,14 +105,14 @@ Open `llm_causal_audit.ipynb` and run `Kernel → Restart & Run All`. The notebo
 ## Key Design Choices
 
 - **Local model only (Ollama):** No API key, no cost, fully reproducible. Anyone can run this on their own machine.
-- **Manual scoring with a rubric:** Responses are scored 0 / 0.5 / 1 using a transparent rubric defined in the notebook. Manual evaluation is appropriate here because causal reasoning requires judgment, not pattern matching — and making that explicit is itself an educational point.
+- **Manual scoring with a rubric:** Responses are scored 0 / 0.5 / 1 using a transparent rubric defined in the notebook. Manual evaluation is appropriate here because causal reasoning requires judgment, not pattern matching and making that explicit is itself an educational point.
 - **Written for a non-technical reader:** Every section includes a plain-language Markdown explanation before the code, so the notebook is readable as a standalone educational document, not just a script.
 
 ---
 
 ## Educational Connection
 
-This project is motivated by the goals of the UBC TLEF GenAI Cluster initiative: to develop discipline-specific educational modules that demystify AI for Arts undergraduates. The findings here — particularly which types of causal errors LLMs make most consistently, and how prompting strategy affects performance — are designed to be directly usable as discussion material in an economics or social science classroom.
+This project is motivated by the goals of the UBC TLEF GenAI Cluster initiative: to develop discipline-specific educational modules that demystify AI for Arts undergraduates. The findings here, particularly which types of causal errors LLMs make most consistently, and how prompting strategy affects performance, are designed to be directly usable as discussion material in an economics or social science classroom.
 
 ---
 
